@@ -3,7 +3,6 @@ const startVideoPreview = (e) => {
   if (e) {
     (e.style.display = "block"), (e.style.opacity = "1");
     let t = e.parentNode.querySelector("video");
-    console.log("t sourav",t)
     t &&
       ((t.currentTime = 0),
       t.play(),
@@ -14,7 +13,6 @@ const startVideoPreview = (e) => {
 };
 startVideoPreviewCallback = (e) => {
   let t = e.currentTarget?.querySelector(".video-preview-container");
-  console.log("t sanskar",t)
   t && startVideoPreview(t.querySelector("video"));
 };
 stopVideoPreview = (e) => {
